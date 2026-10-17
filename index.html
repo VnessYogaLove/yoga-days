@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yoga Day Chur – Januar 2027 | Zwei Tage Workshops von Inside Flow bis Yin</title>
-<meta name="description" content="Zwei Tage Yoga in Chur: Workshops von Inside Flow bis Yin, offen für jedes Level. Jetzt Ticket sichern.">
+<title>Yoga Days Chur – 16. und 17. Januar 2027 | Zwei Tage Workshops von Inside Flow bis Yin</title>
+<meta name="description" content="Zwei Tage Yoga in Chur: Workshops von Inside Flow bis Yin, offen für jedes Level, Verpflegung inklusive. Jetzt Ticket sichern.">
 <style>
 :root{
-  --ink:#0e2a36; --lake:#1f5d6e; --mist:#dce9ee; --snow:#f6f9fa; --glow:#e5527a; --glow-dark:#c23f63;
+  --brand:#75c3c3; --brand-dark:#2a6f6f; --ink:#0f3236; --mist:#e3f2f2; --snow:#f7fbfb;
   --sans:"Avenir Next","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box}
@@ -15,29 +15,28 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--snow);line-height:1.6;font-size:1.0625rem}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--glow);outline-offset:3px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .wrap{width:min(100% - 2.5rem,68rem);margin-inline:auto}
 .narrow{max-width:40rem}
 
-/* Header */
-.bar{position:sticky;top:0;z-index:10;background:rgba(14,42,54,.96);color:#fff}
+.bar{position:sticky;top:0;z-index:10;background:var(--ink);color:#fff}
 .bar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:56px}
-.bar strong{font-weight:700;letter-spacing:.01em}
+.bar strong{font-weight:700}
 
-/* Buttons */
-.btn{display:inline-block;background:var(--glow);color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.6rem;border-radius:999px}
-.btn:hover{background:var(--glow-dark)}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.6rem;border-radius:999px}
+.btn:hover{background:#1c4d53}
 .btn.small{padding:.45rem 1.1rem;font-size:.95rem}
+.bar .btn{background:var(--brand);color:var(--ink)}
+.bar .btn:hover{background:#9fd8d8}
 
-/* Hero */
-.hero{background:linear-gradient(180deg,#0e2a36 0%,#1f5d6e 62%,#e9a0a5 100%);color:#fff;position:relative;overflow:hidden}
+.hero{background:linear-gradient(180deg,var(--brand) 0%,#a6dada 65%,#d3eeee 100%);color:var(--ink);position:relative;overflow:hidden}
 .hero .wrap{padding:clamp(3rem,9vw,6.5rem) 0 clamp(11rem,26vw,17rem)}
 .hero h1{font-size:clamp(3rem,11vw,7.5rem);line-height:.95;margin:0 0 1.5rem;font-weight:800;letter-spacing:-.03em}
 .hero .claim{font-size:clamp(1.15rem,2.6vw,1.6rem);max-width:34rem;margin:0 0 1.75rem;line-height:1.4}
-.hero .facts{display:flex;flex-wrap:wrap;gap:.5rem 2rem;margin:0 0 2rem;padding:0;list-style:none;font-weight:600}
+.hero .facts{display:flex;flex-wrap:wrap;gap:.5rem 2rem;margin:0 0 2rem;padding:0;list-style:none;font-weight:700}
+.hero .facts .minor{font-size:.9rem;font-weight:500}
 .ridges{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(9rem,24vw,15rem);display:block}
 
-/* Sections */
 section{padding:clamp(3rem,7vw,5.5rem) 0}
 h2{font-size:clamp(1.8rem,4.5vw,2.8rem);line-height:1.1;margin:0 0 1.5rem;letter-spacing:-.02em}
 h3{margin:0 0 .25rem;font-size:1.2rem}
@@ -45,29 +44,45 @@ p{margin:0 0 1rem}
 .alt{background:var(--mist)}
 
 .points{display:grid;gap:1.75rem 3rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin-top:2rem}
-.points div{border-left:4px solid var(--glow);padding-left:1rem}
+.points div{border-left:4px solid var(--brand);padding-left:1rem}
 
-.lineup{list-style:none;margin:0;padding:0;max-width:44rem}
-.lineup li{display:grid;grid-template-columns:5.5rem 1fr;gap:1.25rem;padding:1.25rem 0;border-top:1px solid rgba(14,42,54,.2)}
-.lineup li:last-child{border-bottom:1px solid rgba(14,42,54,.2)}
-.photo{width:5.5rem;height:5.5rem;border-radius:50%;background:var(--lake);opacity:.25}
+.lineup{list-style:none;margin:0;padding:0;display:grid;gap:0 3rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+.lineup li{padding:.9rem 0;border-top:1px solid rgba(15,50,54,.2)}
+.lineup h3{font-size:1.1rem;margin:0}
+.lineup p{margin:0;color:var(--brand-dark);font-weight:600}
 
-.days{display:grid;gap:2rem 3rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
-.days ul{margin:0;padding-left:1.1rem}
+.days{display:grid;gap:2.5rem 3rem;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr))}
+.slot{display:grid;grid-template-columns:3.6rem 1fr;gap:.25rem 1rem;padding:.75rem 0;border-top:1px solid rgba(15,50,54,.2)}
+.slot time{font-weight:700}
+.s{margin:0 0 .5rem}
+.s:last-child{margin:0}
+.s b{display:block}
+.s small{display:block;font-size:.95rem}
+.room{font-weight:700;color:var(--brand-dark)}
 
-blockquote{margin:0;padding-left:1.25rem;border-left:4px solid var(--lake);font-size:1.25rem;max-width:36rem}
+.who{font-size:1rem;font-weight:700;margin:.75rem 0 0}
+blockquote{margin:0;padding-left:1.25rem;border-left:4px solid var(--brand-dark);font-size:1.25rem;max-width:36rem}
 
 .tickets{background:var(--ink);color:#fff}
 .tickets h2{color:#fff}
+.prices{list-style:none;margin:1.5rem 0;padding:0;max-width:34rem}
+.prices li{display:flex;justify-content:space-between;gap:1rem;padding:.7rem 0;border-top:1px solid rgba(255,255,255,.25)}
+.prices li:last-child{border-bottom:1px solid rgba(255,255,255,.25)}
+.prices strong{color:var(--brand);white-space:nowrap}
+.tickets .btn{background:var(--brand);color:var(--ink)}
+.tickets .btn:hover{background:#9fd8d8}
+.widget iframe{border:0;display:block;width:100%}
+.alt-link{margin:.75rem 0 0;font-size:.95rem}
+.alt-link a{color:var(--brand-dark)}
+.note{font-size:.9rem;margin:-.75rem 0 1rem;opacity:.85}
 .widget{background:#fff;color:var(--ink);border-radius:14px;padding:1.25rem;margin-top:1.5rem;min-height:12rem}
 
-details{border-top:1px solid rgba(14,42,54,.2);padding:1rem 0;max-width:44rem}
-details:last-of-type{border-bottom:1px solid rgba(14,42,54,.2)}
+details{border-top:1px solid rgba(15,50,54,.2);padding:1rem 0;max-width:44rem}
+details:last-of-type{border-bottom:1px solid rgba(15,50,54,.2)}
 summary{cursor:pointer;font-weight:700;font-size:1.1rem}
 details p{margin:.75rem 0 0}
 
-.final{text-align:left}
-footer{background:var(--ink);color:#c9d9df;padding:2rem 0;font-size:.95rem}
+footer{background:var(--ink);color:#c9e3e3;padding:2rem 0;font-size:.95rem}
 footer a{text-decoration:underline}
 
 /* Platzhalter: vor dem Livegang entfernen */
@@ -78,111 +93,137 @@ footer a{text-decoration:underline}
 
 <header class="bar">
   <div class="wrap">
-    <strong>Yoga Day Chur</strong>
+    <strong>Yoga Days Chur</strong>
     <a class="btn small" href="#tickets">Ticket sichern</a>
   </div>
 </header>
 
 <main>
-<!-- HERO -->
 <div class="hero">
   <div class="wrap">
-    <h1>Yoga Day<br>Chur</h1>
+    <h1>Yoga Days<br>Chur</h1>
     <p class="claim">Ein Line-up mit ganz unterschiedlichen Stilen und Persönlichkeiten – zwei Tage voller Workshops von Inside Flow bis Yin, offen für jedes Level.</p>
     <ul class="facts">
-      <li>Januar 2027 <span class="todo">[genaues Datum]</span></li>
-      <li>Chur <span class="todo">[Location]</span></li>
-      <li>Zwei Tage</li>
+      <li>16. und 17. Januar 2027</li>
+      <li>im LIUG, Chur</li>
+      <li class="minor">Verpflegung inklusive</li>
     </ul>
     <a class="btn" href="#tickets">Ticket sichern</a>
   </div>
   <svg class="ridges" viewBox="0 0 1200 240" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 150 L120 96 L210 132 L330 60 L450 128 L560 84 L690 150 L800 74 L930 138 L1050 92 L1200 140 L1200 240 L0 240Z" fill="#2e6f80" opacity=".55"/>
-    <path d="M0 180 L90 140 L200 170 L320 112 L440 176 L560 130 L680 184 L820 120 L940 178 L1070 136 L1200 176 L1200 240 L0 240Z" fill="#14384a" opacity=".8"/>
-    <path d="M0 214 L140 186 L260 208 L400 172 L540 210 L700 180 L860 212 L1010 184 L1200 210 L1200 240 L0 240Z" fill="#f6f9fa"/>
+    <path d="M0 150 L120 96 L210 132 L330 60 L450 128 L560 84 L690 150 L800 74 L930 138 L1050 92 L1200 140 L1200 240 L0 240Z" fill="#4fa3a3" opacity=".55"/>
+    <path d="M0 180 L90 140 L200 170 L320 112 L440 176 L560 130 L680 184 L820 120 L940 178 L1070 136 L1200 176 L1200 240 L0 240Z" fill="#2a6f6f" opacity=".85"/>
+    <path d="M0 214 L140 186 L260 208 L400 172 L540 210 L700 180 L860 212 L1010 184 L1200 210 L1200 240 L0 240Z" fill="#f7fbfb"/>
   </svg>
 </div>
 
-<!-- WAS DICH ERWARTET -->
 <section id="erwartet">
   <div class="wrap">
-    <h2>Zwei Tage, die zu deinem Stil passen</h2>
-    <p class="narrow">Beim Yoga Day unterrichten Lehrende mit ganz verschiedenen Zugängen. Du suchst dir aus, was dich anspricht: kraftvoll, fliessend oder ruhig.</p>
+    <h2>Dein Neustart 2027 in den Bergen</h2>
+    <p class="narrow">Mitten im Winter, in der Alpenstadt Chur: zwei Tage, um ins neue Jahr zu starten. Bei den Yoga Days unterrichten Lehrende mit ganz verschiedenen Zugängen. Du suchst dir aus, was dich anspricht: kraftvoll, fliessend oder ruhig.</p>
     <div class="points">
       <div><h3>Für jedes Level</h3><p>Ob du neu dabei bist oder seit Jahren übst: Die Workshops sind für alle zugänglich.</p></div>
-      <div><h3>Stilvielfalt</h3><p>Von Inside Flow bis Yin Yoga. Inside Flow ist bei regionalen Yoga-Festivals selten und bei uns ein fester Teil des Programms.</p></div>
-      <div><h3>Gemeinsam üben</h3><p>Zwei Tage mit Gleichgesinnten in Chur, mit Zeit für Austausch zwischen den Sessions.</p></div>
-      <div><h3>Verpflegung teilweise inklusive</h3><p>Ein Teil der Verpflegung ist im Ticket enthalten. Übernachtung ist nicht dabei, du reist einfach für die zwei Tage an.</p></div>
+      <div><h3>Stilvielfalt</h3><p>Von Inside Flow über Chromatic Yoga und Breathwork bis Yin Yoga. Inside Flow ist bei regionalen Yoga-Festivals selten und bei uns ein fester Teil des Programms.</p></div>
+      <div><h3>Community Feeling</h3><p>Zwei Tage mit Gleichgesinnten, mit Zeit für Austausch zwischen den Sessions.</p></div>
+      <div><h3>Verpflegung inklusive</h3><p>Suppe, Brot und Knabbereien sowie Kaffee, Tee und Wasser sind im Ticket inbegriffen. Übernachtung ist nicht dabei, du reist einfach für die zwei Tage an.</p></div>
     </div>
   </div>
 </section>
 
-<!-- LINE-UP -->
 <section id="lineup" class="alt">
   <div class="wrap">
     <h2>Das Line-up</h2>
     <ul class="lineup">
-      <li><div class="photo" role="img" aria-label="Foto folgt"></div><div><h3><span class="todo">[Name]</span> – Inside Flow</h3><p><span class="todo">[Ein Satz: Was erwartet die Teilnehmenden in diesem Workshop?]</span></p></div></li>
-      <li><div class="photo" role="img" aria-label="Foto folgt"></div><div><h3><span class="todo">[Name]</span> – Yin Yoga</h3><p><span class="todo">[Ein Satz zum Fokus und zur Stimmung]</span></p></div></li>
-      <li><div class="photo" role="img" aria-label="Foto folgt"></div><div><h3><span class="todo">[Name]</span> – <span class="todo">[Stil]</span></h3><p><span class="todo">[Ein Satz zum Workshop]</span></p></div></li>
+      <li><h3>Alexey Gaevskij</h3><p>Therapeutisches Yoga</p></li>
+      <li><h3>Julia Meyer</h3><p>Breathwork</p></li>
+      <li><h3>Maura Pianaro</h3><p>Asana Lab, Inside Flow</p></li>
+      <li><h3>Nils v. Münster-Kistner</h3><p>Chromatic Yoga</p></li>
+      <li><h3>Ditya Sari</h3><p>Chromatic Yoga</p></li>
+      <li><h3>Alexandra Aktulum</h3><p>Thai Massage</p></li>
+      <li><h3>Lena Kneuper</h3><p>Inside Flow</p></li>
+      <li><h3>Gloria Vanova</h3><p>Inside Pilates</p></li>
+      <li><h3>Michaela Bucher</h3><p>Klangschalen Yoga</p></li>
+      <li><h3>Rachel Lutz</h3><p>Inside Flow (Team Teaching)</p></li>
+      <li><h3>Stéphanie Caviezel</h3><p>Inside Flow (Team Teaching)</p></li>
+      <li><h3>Regina Immer</h3><p>Yin Yoga</p></li>
     </ul>
   </div>
 </section>
 
-<!-- PROGRAMM -->
 <section id="programm">
   <div class="wrap">
     <h2>Das Programm</h2>
+    <p class="narrow">Zwei Räume, Piazza und Karma: Bei parallelen Sessions wählst du, was dich mehr anspricht.</p>
+    <p class="narrow"><strong>Timetable vorläufig (tba)</strong>, Änderungen vorbehalten.</p>
     <div class="days">
-      <div><h3>Tag 1 <span class="todo">[Datum]</span></h3><ul><li><span class="todo">[Uhrzeit – Workshop]</span></li><li><span class="todo">[Uhrzeit – Workshop]</span></li><li><span class="todo">[Uhrzeit – Pause / Verpflegung]</span></li></ul></div>
-      <div><h3>Tag 2 <span class="todo">[Datum]</span></h3><ul><li><span class="todo">[Uhrzeit – Workshop]</span></li><li><span class="todo">[Uhrzeit – Workshop]</span></li><li><span class="todo">[Uhrzeit – Abschluss]</span></li></ul></div>
+      <div>
+        <h3>Samstag, 16. Januar</h3>
+        <div class="slot"><time>08:30</time><div class="s"><b>Open Doors</b></div></div>
+        <div class="slot"><time>09:15</time><div class="s"><b>Begrüssung</b></div></div>
+        <div class="slot"><time>09:30</time><div class="s"><b>Elements (alle Levels)</b><small>75' · Julia Meyer</small></div></div>
+        <div class="slot"><time>11:00</time><div><div class="s"><span class="room">Piazza</span><b>Back to Back</b><small>75' · Alexey Gaevskij</small></div><div class="s"><span class="room">Karma</span><b>Chromatic Yoga</b><small>75' · Ditya Sari</small></div></div></div>
+        <div class="slot"><time>12:30</time><div><div class="s"><span class="room">Piazza</span><b>Breathwork</b><small>60' · Julia Meyer</small></div><div class="s"><span class="room">Karma</span><b>Inside Pilates</b><small>60' · Gloria Vanova</small></div></div></div>
+        <div class="slot"><time>13:30</time><div class="s"><b>Pause</b></div></div>
+        <div class="slot"><time>14:30</time><div class="s"><b>Mind and Motion</b><small>75' · Alexey Gaevskij</small></div></div>
+        <div class="slot"><time>16:00</time><div><div class="s"><span class="room">Piazza</span><b>Inside Flow</b><small>60' · Stéphanie Caviezel und Rachel Lutz</small></div><div class="s"><span class="room">Karma</span><b>Chromatic Yoga</b><small>60' · Ditya Sari</small></div></div></div>
+        <div class="slot"><time>17:15</time><div class="s"><span class="room">Karma</span><b>Klangschalen</b><small>60' · Michaela Bucher</small></div></div>
+        <div class="slot"><time>18:15</time><div class="s"><b>Come together</b></div></div>
+      </div>
+      <div>
+        <h3>Sonntag, 17. Januar</h3>
+        <div class="slot"><time>09:30</time><div class="s"><b>Chromatic Yoga</b><small>75' · Nils v. Münster-Kistner</small></div></div>
+        <div class="slot"><time>11:00</time><div><div class="s"><span class="room">Piazza</span><b>Asana Lab</b><small>75' · Maura Pianaro</small></div><div class="s"><span class="room">Karma</span><b>Thai Massage</b><small>75' · Alexandra Aktulum</small></div></div></div>
+        <div class="slot"><time>12:15</time><div class="s"><b>Pause</b></div></div>
+        <div class="slot"><time>13:30</time><div><div class="s"><span class="room">Piazza</span><b>Inside Flow</b><small>60' · Maura Pianaro</small></div><div class="s"><span class="room">Karma</span><b>Work Asana Out</b><small>60' · Rachel Lutz und Stéphanie Caviezel</small></div></div></div>
+        <div class="slot"><time>14:45</time><div><div class="s"><span class="room">Piazza</span><b>Inside Flow</b><small>60' · Lena Kneuper</small></div><div class="s"><span class="room">Karma</span><b>Chromatic Yoga</b><small>60' · Nils v. Münster-Kistner</small></div></div></div>
+        <div class="slot"><time>16:00</time><div class="s"><b>Yin Yoga</b><small>60' · Regina Immer</small></div></div>
+        <div class="slot"><time>17:00</time><div class="s"><b>Goodbye</b></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- STIMMEN (nur behalten, wenn echte Zitate vorhanden sind, sonst Abschnitt löschen) -->
 <section id="stimmen" class="alt">
   <div class="wrap">
-    <h2>Stimmen vom letzten Yoga Day</h2>
-    <blockquote><span class="todo">[Echtes Zitat einer Teilnehmerin oder eines Teilnehmers]</span></blockquote>
+    <h2>Stimme vom letzten Jahr</h2>
+    <blockquote>«Es war so ein schönes Erlebnis und die Location ist einfach der Wahnsinn. Durch die verschiedenen Yoga-Stile konnte man einfach alles mal ausprobieren und auch mal etwas Neues entdecken. Ich komme gerne wieder.»<p class="who">Vanessa</p></blockquote>
   </div>
 </section>
 
-<!-- TICKETS -->
 <section id="tickets" class="tickets">
   <div class="wrap">
     <h2>Dein Ticket in wenigen Klicks</h2>
-    <p class="narrow">Wähle dein Ticket, bezahle sicher online und erhalte es direkt per E-Mail. Die Preise und Ticketarten siehst du im Formular.</p>
-    <p class="narrow"><span class="todo">[Optional: Frühbucher-Hinweis mit Datum]</span></p>
-
+    <p class="narrow">Wähle dein Ticket direkt hier. Die Verpflegung ist in jedem Ticket inbegriffen.</p>
+    <ul class="prices">
+      <li><span>EarlyBird 2-Tages-Ticket (50Tickets)</span><strong>209.00 CHF</strong></li>
+      <li><span>Samstag</span><strong>189.00 CHF</strong></li>
+      <li><span>Sonntag</span><strong>159.00 CHF</strong></li>
+      <li><span>Reguläres 2-Tages-Ticket</span><strong>259.00 CHF</strong></li>
+    </ul>
+    <p class="note">Preise inkl. Steuern</p>
     <div class="widget">
-      <!-- ============================================================
-           HIER DEN EMBED-CODE AUS TICKET TAILOR EINFÜGEN
-           (Ticket Tailor: Promote → Website embed code, bzw. "Share event"
-           → "Create embed code"). Den gelben Platzhalter darunter löschen.
-           ============================================================ -->
-      <p><span class="todo">Ticket-Formular folgt: Hier den Ticket-Tailor-Code einfügen.</span></p>
+      <script src="https://embed.eventfrog.ch/api/scripts/embed/event.js"></script>
+      <iframe width="100%" height="400" title="Ticketshop Yoga Days Chur" src="https://embed.eventfrog.ch/de/p/sport-fitness/yoga/yoga-days27-chur-7516119989314686048.html?color=2A6F6F&amp;infobox=1&amp;description=1&amp;location=1&amp;organizer=1&amp;sponsors=1"></iframe>
+      <p class="alt-link"><a href="https://eventfrog.ch/de/p/sport-fitness/yoga/yoga-days27-chur-7516119989314686048.html" target="_blank" rel="noopener">Ticketshop in neuem Tab öffnen</a></p>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
 <section id="faq">
   <div class="wrap">
     <h2>Häufige Fragen</h2>
-    <details><summary>Ist der Yoga Day auch für Anfängerinnen und Anfänger geeignet?</summary><p>Ja. Der Yoga Day ist offen für jedes Level.</p></details>
-    <details><summary>Was soll ich mitbringen?</summary><p><span class="todo">[Bitte bestätigen: Yogamatte, Wasserflasche, bequeme Kleidung]</span></p></details>
-    <details><summary>Ist Verpflegung dabei? Gibt es eine Unterkunft?</summary><p>Die Verpflegung ist teilweise im Ticket enthalten. Eine Unterkunft ist nicht inbegriffen.</p></details>
-    <details><summary>Wie komme ich nach Chur?</summary><p><span class="todo">[Anreise mit Zug/Auto, Parkmöglichkeiten, Adresse der Location]</span></p></details>
-    <details><summary>Kann ich mein Ticket stornieren?</summary><p><span class="todo">[Stornobedingungen]</span></p></details>
+    <details><summary>Sind die Yoga Days auch für Anfängerinnen und Anfänger geeignet?</summary><p>Ja. Die Yoga Days sind offen für jedes Level.</p></details>
+    <details><summary>Was soll ich mitbringen?</summary><p>Yogamatte, Trinkflasche, bequeme und warme Kleidung. Für Yin Yoga, Klangschalen und Thai Massage ist eine eigene Decke von Vorteil.</p></details>
+    <details><summary>Ist Verpflegung dabei? Gibt es eine Unterkunft?</summary><p>Die Verpflegung ist im Ticket inbegriffen: Suppe, Brot und Knabbereien, dazu Kaffee, Tee und Wasser. Eine Unterkunft ist nicht inbegriffen.</p></details>
+    <details><summary>Wie komme ich nach Chur?</summary><p>Mit dem Auto: Parkplätze sind vorhanden. Du kannst auch mit Bahn und Bus anreisen.</p><p>Adresse: LIUG, Sommeraustrasse 30, 7000 Chur</p></details>
+    <details><summary>Was ist, wenn ich nicht teilnehmen kann?</summary><p>Du kannst dein Ticket an jemand anderen weitergeben.</p></details>
   </div>
 </section>
 
-<!-- ABSCHLUSS -->
-<section class="alt final">
+<section class="alt">
   <div class="wrap">
-    <h2>Sei dabei</h2>
-    <p class="narrow">Zwei Tage Yoga in Chur, mit Lehrenden, die ganz unterschiedlich unterrichten.</p>
+    <h2>Zwei Tage Yoga in Chur: deine Auszeit zum Jahresstart</h2>
+    <p class="narrow">Nimm dir im Januar zwei Tage nur für dich. Probiere Stile aus, die du noch nicht kennst, bewege dich, atme durch und tausche dich mit Gleichgesinnten aus. Um alles andere kümmern wir uns, auch um dein Essen. Du bringst nur deine Matte mit.</p>
     <a class="btn" href="#tickets">Ticket sichern</a>
   </div>
 </section>
@@ -190,8 +231,8 @@ footer a{text-decoration:underline}
 
 <footer>
   <div class="wrap">
-    <p>Yoga Day Chur in Zusammenarbeit mit yogaste.ch</p>
-    <p><span class="todo">[Impressum]</span> &nbsp; <span class="todo">[Datenschutz]</span> &nbsp; <span class="todo">[Kontakt-E-Mail]</span></p>
+    <p>Yoga Days Chur in Zusammenarbeit mit yogaste.ch</p>
+    <p><a href="mailto:info@yogaste.ch">info@yogaste.ch</a> &nbsp; <a href="https://www.yogaste.ch/index.php?view=article&amp;id=16:impressum&amp;catid=2:uncategorised" target="_blank" rel="noopener">Impressum</a> &nbsp; <a href="https://www.yogaste.ch/index.php?view=article&amp;id=17:datenschutz&amp;catid=2:uncategorised" target="_blank" rel="noopener">Datenschutz</a></p>
   </div>
 </footer>
 
